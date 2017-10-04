@@ -46,6 +46,8 @@ import org.gradle.language.nativeplatform.HeaderExportingSourceSet;
  *     }
  * }
  * </pre>
+ *
+ * Forcing a build
  */
 @Incubating
 public interface CSourceSet extends HeaderExportingSourceSet, LanguageSourceSet, DependentSourceSet {
