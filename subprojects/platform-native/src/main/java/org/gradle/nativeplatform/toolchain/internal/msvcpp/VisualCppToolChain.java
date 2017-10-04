@@ -138,6 +138,8 @@ public class VisualCppToolChain extends ExtendableToolChain<VisualCppPlatformToo
         if (!operatingSystem.isWindows()) {
             availability.unavailable("Visual Studio is not available on this operating system.");
             return;
+        } else {
+            LOGGER.info("blah");
         }
 
         VisualStudioLocator.SearchResult visualStudioSearchResult = visualStudioLocator.locateDefaultVisualStudioInstall(installDir);
